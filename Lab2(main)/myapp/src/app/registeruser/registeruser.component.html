@@ -1,0 +1,51 @@
+<h2>Register new user on the system</h2>
+
+<div class="row">
+  <div class="col-md-10">
+
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">User Name</label>
+        <div class="col-sm-10">
+          <input type="text" [(ngModel)]="userModel.userName" name="userName" class="form-control" placeholder="User Name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" [(ngModel)]="userModel.password" name="password" class="form-control" placeholder="Password">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Re-type Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" [(ngModel)]="passwordRetype" name="passwordRetype"
+            placeholder="Re-type Password">
+        </div>
+      </div>
+
+      
+
+      <div class="form-group">
+        <label for="exampleinputEmail1">E-mail</label>
+          <input type="text" class="form-control" [(ngModel)]="userModel.userEmail" name="userEmail" placeholder="E-mail">
+        </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="userModel.firstName" name="first" placeholder="First Name">
+      </div>
+
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="userModel.lastName" name="last" placeholder="Last Name">
+      </div>
+
+      <button (click)="save();" type="button" class="btn btn-info">Save User</button>
+
+    </form>
+  </div>
+</div>
